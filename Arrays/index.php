@@ -31,6 +31,15 @@ $unpublishedPosts = array_filter($posts, function($post) {
 
  $titles = array_column($posts, 'title');  // return only the title column
 
+// echo '<pre>';
+// die(var_dump($titles));
+// echo '</pre>';
+
+
+ $arr = ['one', 'two', 'three'];
+
+die(var_dump( implode(' | ', $arr) )); // implode separes an array with the character/symbol that yout want
+
 echo '<pre>';
-die(var_dump($titles));
+die(var_dump($arr));
 echo '</pre>';
